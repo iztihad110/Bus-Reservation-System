@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1634737972 source:c:\users\user\desktop\codes\oop_lab\bus reservation system\busreservation\main.cpp
+	<iostream>
+	<vector>
+	"Bus.h"
+
+1634735456 c:\users\user\desktop\codes\oop_lab\bus reservation system\busreservation\include\bus.h
+	<string>
+	<vector>
+
+1634737795 source:c:\users\user\desktop\codes\oop_lab\bus reservation system\busreservation\src\bus.cpp
+	"Bus.h"
+	<iostream>
+	<string>
+	<vector>
+
