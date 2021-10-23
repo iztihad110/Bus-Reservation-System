@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1634964890 source:c:\users\user\documents\oop project\main.cpp
+	<bits/stdc++.h>
+	"Passenger.h"
+	"Bus.h"
+
+1634961222 c:\users\user\documents\oop project\passenger.h
+	<bits/stdc++.h>
+	"User.h"
+
+1634057224 c:\users\user\documents\oop project\user.h
+	<bits/stdc++.h>
+
+1634960034 source:c:\users\user\documents\oop project\passenger.cpp
+	<bits/stdc++.h>
+	"Passenger.h"
+
+1634965097 source:c:\users\user\documents\oop project\bus.cpp
+	"Bus.h"
+	<iostream>
+	<string>
+	<vector>
+
+1634959735 c:\users\user\documents\oop project\bus.h
+	<string>
+	<vector>
+
