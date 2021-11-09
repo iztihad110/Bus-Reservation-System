@@ -18,11 +18,14 @@ void Show_Available_Buses(){
     cout<<endl;
 }
 void Show_All_Buses(){
+    cout << "\n";
     cout<<"\t\t\t  All Buses"<<endl;
+    cout << "\n======================================================================================================\n";
     for(int i=0;i<vec_Bus.size();i++){
         cout<<"\t\t\t  Bus No.: "<<vec_Bus[i].get_bus_id()<<endl;
         cout<<"\t\t\t  Starting Point: "<<vec_Bus[i].getStartingPoint()<<endl;
-        cout<<"\t\t\t  Destination: "<<vec_Bus[i].getDestination()<<endl;
+        cout<<"\t\t\t  Destination: "<<vec_Bus[i].getDestination()<<endl;\
+        cout << "\n======================================================================================================\n";
     }
     cout<<endl;
 }
@@ -79,8 +82,27 @@ int main(){
         cout<<"\t\t\t  Press 2 to Register"<<endl;
         cout<<"\t\t\t  Press 3 to Add Bus"<<endl;
         cout<<"\t\t\t  Press 4 to Exit"<<endl;
-        cout<<"\t\t\t  Enter Choice:"<<" ";
-        cin>>t;
+
+//        cout<<"\t\t\t  Enter Choice:"<<" ";
+//        cin>>t;
+
+        bool aux = true;
+        cin.exceptions(std::istream::failbit);
+        do {
+            try {
+                cout<<"\t\t\t  Enter Choice:"<<" ";
+                cin >> t;
+                aux = true;
+            }
+            catch (std::ios_base::failure &fail) {
+                aux = false;
+                cout << "\n\t\t\tPlease Insert a Valid (Integer) Choice." << endl;
+                cin.clear();
+                std::string tmp;
+                getline(cin, tmp);
+            }
+        } while (aux == false);
+
         if(t==1){
             if(Login()){
                 cout<<"\t\t\t  Login Successful"<<endl;
